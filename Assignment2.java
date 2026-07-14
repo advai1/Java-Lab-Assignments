@@ -30,8 +30,8 @@ class Book {
     }
 
     public void displayInfo() {
-        System.out.println("Title: " + title + "\n Author: " + author+ "\n Pages: " + pages);
-        System.out.println("============================================")
+        System.out.println("Title: " + title + "\nAuthor: " + author+ "\nPages: " + pages);
+        System.out.println("============================================");
     }
 }
 
