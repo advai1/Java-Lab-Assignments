@@ -14,9 +14,9 @@ class Book {
 
     }
     //Parameterized Constructor
-    public Book(String bookTitle, String author, int bookPages) {
+    public Book(String bookTitle, String bookAuthor, int bookPages) {
         this.title = bookTitle;
-        this.author = bookAuthor
+        this.author = bookAuthor;
         this.pages = bookPages;
         System.out.println("---Parameterized constructor called.---");
 
@@ -35,7 +35,7 @@ class Book {
     }
 }
 
-public class Main {
+class Main {
     public static void main(String[] args) {
 
         // using the Default Constructor
@@ -43,7 +43,7 @@ public class Main {
         book1.displayInfo();
 
         //using the Parameterized Constructor
-        Book book2 = new Book("Kraven's Last Hunt", "J.M. DeMatteis" 168);
+        Book book2 = new Book("Kraven's Last Hunt", "J.M. DeMatteis",  168);
         book2.displayInfo();
 
         //using the Copy Constructor
