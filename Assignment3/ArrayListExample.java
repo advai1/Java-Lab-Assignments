@@ -16,5 +16,8 @@ public class ArrayListExample {
 
         System.out.println("Size: " + fruits.size());
         System.out.println("Contains Apple? " + fruits.contains("Apple"));
+
+        fruits.add("Jackfruit");
+        System.out.println("New Fruits: " + fruits);
     }
 }
