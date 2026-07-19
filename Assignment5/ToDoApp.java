@@ -15,7 +15,7 @@ public class ToDoApp {
         while (running) {
 
             System.out.println("Select Task");
-            System.out.println("(1) Add Task    (2) View List   (3) Exit");
+            System.out.println("(1) Add Task    (2) Delete Task    (3) View List    (4) Exit");
             String choice = input.nextLine();
 
             switch (choice) {
@@ -27,21 +27,36 @@ public class ToDoApp {
                     break;
 
                 case "2":
-                    StringBuffer sb = new StringBuffer();
-                    sb.append("<---Your List--->");
-                    for (int i = 0; i < ToDoList.size(); i++){
-                        sb.append((i+1) + ". " + ToDoList.get(i) + "\n");   //adds each task as a formatted string into buffer
+                    System.out.print("Enter task no.: ");
+                    int toDelete = input.nextInt();
+                    input.nextLine(); // for the leftover enter key!
+
+                    if (toDelete > 0 && toDelete <= ToDoList.size()) {  // Check if the no. is valid
+                        ToDoList.remove(toDelete - 1);
+                        System.out.println("Task deleted.");
                     }
-                    System.out.println(sb);                                 //prints all the buffer content, i.e. all tasks
+                    else {
+                        System.out.println("Invalid task number.");
+                    }
                     break;
 
                 case "3":
+                    StringBuffer sb = new StringBuffer();
+                    sb.append("===Your List===>\n");
+                    for (int i = 0; i < ToDoList.size(); i++){
+                        sb.append((i+1) + ". " + ToDoList.get(i) + "\n");   //adds each task as a formatted string into buffer
+                    }
+                    sb.append("===============>");
+                    System.out.println(sb);                                 //prints all the buffer content, i.e. all tasks
+                    break;
+
+                case "4":
                     running = false;
                     System.out.println("---Exited App---");
                     break;
 
                 default:
-                    System.out.println("Invalid Choice!")
+                    System.out.println("Invalid Choice!");
                     break;
             }
         }
