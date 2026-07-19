@@ -12,7 +12,7 @@ public class BillingApp {
         totalRevenue += billAmount;
     }
 
-    // 1. DINE-IN: Base food cost + service charge
+    // 1. Dine-In
     public double calculateBill(double foodCost) {
         double tax = foodCost * (taxRate / 100);
         double total = foodCost + tax;
@@ -21,7 +21,7 @@ public class BillingApp {
         return total;
     }
 
-    // 2. TAKEAWAY: Base food cost + tax rate + small packaging fee
+    // 2. Takeaway
     public double calculateBill(double foodCost, double packagingFee) {
         double tax = foodCost * (taxRate / 100);
         double total = foodCost + tax + packagingFee;
@@ -30,7 +30,7 @@ public class BillingApp {
         return total;
     }
 
-    // 3. DELIVERY: Base food cost + tax rate + flat delivery fee + tip
+    // 3. Delivery
     public double calculateBill(double foodCost, double packagingFee, double deliveryFee) {
         taxRate = 18.0;
         double tax = foodCost * (taxRate / 100);
@@ -46,7 +46,7 @@ public class BillingApp {
         System.out.println("--- Processing Restaurant Orders ---\n");
 
         // Order 1: Dine-in (Rs.500 food)
-        double dineInBill = app.calculateBill(500.00, 8.0, 5.00);
+        double dineInBill = app.calculateBill(500.00);
         System.out.printf("Dine-in Order Total: Rs.%.2f%n", dineInBill);
 
         // Order 2: Takeaway (Rs.399.00 food, Rs.4.50 packaging fee)
