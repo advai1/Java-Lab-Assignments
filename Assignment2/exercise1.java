@@ -9,7 +9,7 @@ class Student{
     Student() {                             //Default Constructor
         name = "Default";
         rollNo = 0;
-        System.out.println("Default COnstructor called.");
+        System.out.println("Default Constructor called.");
     }
     
     Student(String n, int r) {              //Parameterized Constructor
