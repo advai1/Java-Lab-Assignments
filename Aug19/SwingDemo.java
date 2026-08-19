@@ -1,5 +1,3 @@
-package Aug19;
-
 import javax.swing.*;
 
 public class SwingDemo {
