@@ -1,3 +1,4 @@
+/*
 package Aug19;
 import java.applet.Applet;
 import java.awt.Graphics;
@@ -7,7 +8,4 @@ public class AppletDemo {
         g.drawString("Welcome to Java Applet!", 50, 50);
     }
 }
-
-/*
-
 */
