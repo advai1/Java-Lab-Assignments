@@ -19,7 +19,8 @@ public class Ex1 {
             System.out.println("Withdrawal successful. New balance: Rs." + balance);
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
+        }finally{
+            sc.close();
         }
-        sc.close();
     }
 }

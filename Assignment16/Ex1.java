@@ -20,7 +20,8 @@ public class Ex1 {
             System.out.println("You are eligible to vote.");
         } catch (InvalidAgeException e) {
             System.out.println("Exception: " + e.getMessage());
-        }
-        sc.close();
+        } finally{
+            sc.close();
+        } 
     }
 }

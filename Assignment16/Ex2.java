@@ -20,7 +20,8 @@ public class Ex2 {
             System.out.println("You are eligible for a driving license.");
         } catch (UnderAgeException e) {
             System.out.println("Exception: " + e.getMessage());
+        } finally{
+            sc.close();
         }
-        sc.close();
     }
 }

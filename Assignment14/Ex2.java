@@ -14,7 +14,8 @@ public class Ex2 {
             System.out.println("Order placed for " + quantity + " items.");
         } catch (Exception e) {
             System.out.println("Invalid Input: " + e.getMessage());
+        }finally{
+            sc.close();
         }
-        sc.close();
     }
 }
