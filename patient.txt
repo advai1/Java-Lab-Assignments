@@ -1,0 +1,4 @@
+Patient ID: P123
+Name: Rekha
+Age: 45
+Diagnosis: Mouth Cancer

@@ -1,0 +1,55 @@
+JDBC can be defined as organised collections of Java classes which have different properties with the database.
+The communication between Java applications and the DB is done by APIs.
+
+Working of Java Applications:
+    Java applications run on JDBC connectivity.
+    There are 3 components for running this interface - frontend, backend, database.
+    When a user http request will be sent to the database through APIs, then all the database will be stored in cycle of permanent memory allocation.
+
+Structure of Java Applications:
+    Frontend -- html, css, js, requests
+
+DBMS is a sw used to create, store, manage, retrieve and manipulate data in DBs.
+
+Simple Architecture of DBMS
+                                Java App
+                                    |
+                                   DBMS
+                                    |
+                    ,---------------DB----------,
+                    |                           |
+                Relational                  CRUD ops ------ Retrieval output
+
+In sql, we can create DBs, tables, retrieving data
+
+DML Commands
+1. Insert
+2. Update
+3. Delete
+4. Select
+
+Q. create Table Student where entities are rollno, name, coursename, marks, fees
+Q. Perform all DML commands as per your own queries.
+Q. Create a data Employee where employee salary, emp name, emp base location and emp variable pay. Perform all CRUD ops and clause application.
+
+JDBC Architecture:
+    JDBC Applications
+        -While creating a Java application, we go as follows--create a java class and add all operations in it
+
+    **JDBC Driver**
+        -used to communicate with some particular relational database.
+        -The JDBC Driver has 4 types
+            1. JDBC-ODBC bridge driver
+            2. Native API driver
+            3. Network Protocol Driver
+            4. Thin driver
+
+    JDBC API
+        -provides classes and interfaces for database operations
+
+    DBs
+        -used to store all the http requests in the form of DML, DDL commands
+        -The database which is used in Java for specific functions such as
+            1. result set 
+            2. driver manager
+            3. return statement

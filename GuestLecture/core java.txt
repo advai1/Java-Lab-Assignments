@@ -1,0 +1,31 @@
+A Program is defined as a set of instructions, order, msg to an electronic device.
+The conversion of human-language to the language of the electronic device is Programming.
+
+Types of looping statements
+1. if
+2. if else
+3. nested if else
+4. nested if
+
+If the problem statement has keywords like 'check, validate, verify, and far away' then the problem belongs to DMS
+-- decision making statement
+
+Looping is the repetition of the same condition under definite interval of time.
+# Looping statements are generally use when there is a problem statement in structured, repeated numbers or symbols and algorithm is always in the workflow of checking the condition
+
+//-----------print compund interest
+        //-----------print area of hemisphere
+        //-----------find repeated format of squares from 4 to 10
+        //-----------find circumference of the planar side of cuboid in x-y plane
+        //-----------find the area, volume, perimeter of polygon with 7 sides. All sides are symmetric in nature. Height is considered one unimolar side for finding the vol
+        //-----------chek whether a num is divisible by 11.5 and 12.5
+        //------------check whether a number is (1)golden (2)prime (3)angstrom (4)palindrome (5)abundant (6)friendly pair
+
+        //------------fibonacci series in series 15 to 200
+        //------------multiplication table from 1 to 10
+        //------------factorial series from 3 to 7
+        //------------print (1) summ numbers (2) even number (3) odd numbers (4) prime (5) golden
+
+        //------------print 2d array using indexing method (1) 4x3 matrix (2) diagonal matrix (3) analog pattern nums from the matrix
+
+        //------------In strings, problem statements will be asked based on string methods.
