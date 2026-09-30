@@ -1,6 +1,6 @@
 package Assignment18;
 import javax.swing.*;
-import java.awt.event.*;
+//import java.awt.event.*;
 
 public class Ex1 {
     public static void main(String[] args) {

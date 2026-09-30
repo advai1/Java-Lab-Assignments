@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        ".",
+        "Aug19"
+    ],
+    "java.project.referencedLibraries": [
+        "c:\\users\\advait\\Downloads\\mysql-connector-j-26.7.0\\mysql-connector-j-26.7.0.jar"
+    ]
+}
