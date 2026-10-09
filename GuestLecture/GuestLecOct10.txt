@@ -1,1 +1,38 @@
 Java application for product management system with prod id, prod name, prod price. Connect all the database using JDBC.
+
+Multi-threading is defined as a process of running a program in a small part of mulitple functioning independently.
+Multi-threading works on single-layer execution of program.
+Multi-threading is supported in Java with thread classes and thread interfaces.
+________________________________________________________________________________________________________________________________________________
+Thread Lifecycle
+
+New --> Runnable --> Running --> Waititng/Blocked --> Terminated
+
+New         | Thread Object created, not started        | Thread t = new Thread(...)
+Runnable    | Ready, waiting for CPU                    | t.start
+Running     | CPU is executing run()                    | Threadscheduler picks it.
+Waiting     | Paused for some time or event             | sleep(), wait(), waiting for I/O or lock
+Terminated  | Work Finished (dead)                      | run() ends
+________________________________________________________________________________________________________________________________________________
+Q. Create a class with res name, res location, res food price. Create at least 2 instances of restuarant.
+
+Q. Create a thread named counter and add the delay time 500ms with the iterations of 5 times. Create at least 3 thread instances.
+
+Q. to simulate a bank account using multi-threading. The account has an initial balance of Rs.1000.
+    Create two threads - deposit Rs.500 into the bank three times - withdraw Rs.700 from the bank account 3 times. (-- Cognizant/Tech Mahindra)
+
+Q. to simulate movie ticket booking system using multi-threading. Initially the cinema has 10 avaialable seats. 
+    Create at least two threads of customer1 and 2. C1 attempts for booking 7 seats and C2 5 seats. Both cusotmers try to book seats concurretly. 
+    Use the 'synchronus' keyword to ensure that two customers cannot book the same seats or exceed the available capacity.
+    Requiremnets:   1. Create a ticketbooking class
+                    2. Initialise available seats to 10
+                    3. Create a synchronized method 'BookTicket'
+                    4. Create two threeads representing the cusotmers.
+                    5. Use start() to exxecute both threads.
+                    6. If enough seats are available, confirm the booking and update the rmaining seats. Else, display "Not enough seats available."
+
+Q. to simulate onlineshopping app using multi-threading. When a customer places an order, 3 different tasks must be performed.
+    1. Payment thread - process customer's Payment
+    2. Packing thread - packs the ordered product
+    3. Delivery thread - prepare the order for delivery
+    Create 3 threads using the thread class. Each thread should display its task and simulate processing by using thread.sleep().

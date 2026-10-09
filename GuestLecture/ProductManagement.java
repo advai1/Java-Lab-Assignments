@@ -199,7 +199,6 @@ public class ProductManagement {
                         break;
                     }
                     case 6:
-                        System.out.println("Goodbye!");
                         sc.close();
                         return;
                     default:
