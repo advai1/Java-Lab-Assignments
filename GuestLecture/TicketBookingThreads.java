@@ -31,7 +31,7 @@ class BookingTask extends Thread {
 }
 
 public class TicketBookingThreads {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         TicketBooking booking = new TicketBooking();
 
         BookingTask c1 = new BookingTask(booking, 7, "Customer 1");
@@ -39,8 +39,5 @@ public class TicketBookingThreads {
 
         c1.start();
         c2.start();
-
-        c1.join();
-        c2.join();
     }
 }

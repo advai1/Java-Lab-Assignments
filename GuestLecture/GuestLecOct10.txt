@@ -36,3 +36,21 @@ Q. to simulate onlineshopping app using multi-threading. When a customer places 
     2. Packing thread - packs the ordered product
     3. Delivery thread - prepare the order for delivery
     Create 3 threads using the thread class. Each thread should display its task and simulate processing by using thread.sleep().
+
+Q. to create a multi-threading in that way railway reservation system. A train ahs 15 available seats. 3 passengers attempt to book  seats simultaneously
+    Passenger   tries to book
+    1 -          8
+    2 -          5
+    3 -          4
+    Create three threads to represent passengers. All threads must access the same reservation object.
+    Use the 'synchronized' keyword to ensure that the total no. of booked seats never exceed the available capacity.
+
+Q. Create a java program to simulate an atm withdrawal system using multi-threading. A bank account initially contains rs5000. Three customers attempt to withdraw.
+    1 - 2000
+    2 - 2500
+    3 - 1500
+    Create three threads to represent the customers. All threads must access the same bank account object.
+    Use the 'synchronized' keyword to ensure that the acc balance never becomes -ve.
+
+Q. online food inventory system with 3 threads.
+Q. to demonstrate attendance inventory system with 4 threads.
